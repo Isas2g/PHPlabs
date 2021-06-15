@@ -1,0 +1,36 @@
+<main>
+    <form name="Test" method="POST" class="main-form" action="sort.php" target="_blank">   
+        <div>
+            <h3>Таблица элементов</h3> 
+            <table id="elements">
+                <tr>
+                    <td><label for="element0">№1</label></td>
+                    <td class="element-row"><input type="text" name="element0" id="element0"></td>
+                </tr>
+            </table>
+            <input type="hidden" name="arrLength" id="arrLength" value="1">
+        </div>
+        <div style="text-align: right;">
+            <button type="button" name="add" class="form-btn" onclick="addElement('elements');">Добавить еще один элемент</button>
+        </div>
+        
+        <div>
+            <h3>Cпособ сортировки</h3>
+            <select name="opt">
+                <option>Сортировка выбором</option>
+                <option>Пузырьковый алгоритм</option>
+                <option>Алгоритм Шелла</option>
+                <option>Алгоритм садового гнома</option>
+                <option>Быстрая сортировка</option>
+                <option>Встроенная функция PHP для сортировки списков по значению</option>
+            </select>
+        </div>
+        <div class="btn-sort">
+            <button type="submit" name="sort" id="idsort" class="form-btn">Сортировать массив</button>
+        </div>
+    </form>
+</main>
+<footer></footer>
+<script src="main.js"></script>
+</body>
+</html>

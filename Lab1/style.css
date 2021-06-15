@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lemonada", cursive;
+    font-size: 15px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/******************* HEADER *******************/
+
+header {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00796b;
+    display: flex;
+    justify-content: left;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    align-items: center;
+}
+
+.menu_item {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu_item:hover {
+    color: #009688;
+}
+
+header .active {
+    color: #009688;
+}
+
+/******************* INRODUCE SECTION *******************/
+
+.introduce {
+    width: 100%;
+    height: 600px;
+    background-color: #009688;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_title {
+    color: #fff;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+}
+
+.sub_title {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.flex_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+/******************* SERVICES *******************/
+
+.services_wrapper {
+    padding-bottom: 60px;
+}
+
+.services_wrapper h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.services {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services__card {
+    background-color: #f5f5f5;
+    width: 28%;
+    padding: 5px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.services__card img {
+    width: 75%;
+    height: 150px;
+    margin-top: 10px;
+}
+
+.service_title {
+    margin-top: 10px;
+    color: #000;
+    font-size: 0.9rem;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.services__card p:not(.service_title) {
+    color: rgb(54, 54, 54);
+    font-size: 0.8rem;
+}
+
+/******************* PRICES *******************/
+
+.prices {
+    width: 100%;
+    background-color: #f5f5f5;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.prices table {
+    width: 50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.prices table td {
+    border: 1px solid #000;
+    height: 60px;
+}
+
+/******************* FOOTER *******************/
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #919191;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/******************* ABOUT *******************/
+
+.about {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 50px;
+    background-color: #f7f7f7;
+}
+
+.porter {
+    width: 700px;
+}
+
+/******************* CONTACT *******************/
+
+.contact {
+    width: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+
+.contact .title {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.main_form {
+    font-family: "Lemonada", cursive;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.main_form #name {
+    width: 100%;
+    border: none;
+    height: 30px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.main_form #message {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    background-color: #fff;
+    height: 100px;
+    resize: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main_form button {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 30px;
+    color: #fff;
+    font-size: 1rem;
+    background-color: #00796b;
+}
